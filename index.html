@@ -6,11 +6,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Sample</title>
+    <style>
+        div {
+            border: 25px;
+            border-color: maroon;
+            padding-inline: 20%;
+        }
+
+        h1 {
+            color: darkred;
+
+        }
+        span {
+            background-color: crimson;
+        }
+        p {
+            color: rgb(226, 61, 6);
+            padding: auto;
+        }
+    </style>
+    <script>
+        window.onload = alert("hello world");
+    </script>
 </head>
 
 <body>
-    <h1>Hello HTML!!!</h1>
-    <img src="img/myron-markevych.jpeg" alt="Myron Markevych">
+    <footer>
+        <h1>Hello HTML!!!</h1>
+        <img src="img/myron-markevych.jpeg" alt="Myron Markevych">
+    </footer>
+    <main>
+    <h1 style="text-align:center;">The 7 Continents</h1>
+
+    <h4 style="text-align:center;">&#10148; Click on the dots in the image to go to a continent section</h4>
+
+    <map name="continents_map">
+
+        <area shape="circle" coords="70,70,10" href="#north_america">
+
+        <area shape="circle" coords="133,185,10" href="#south_america">
+
+        <area shape="circle" coords="270,137,10" href="#africa">
+
+        <area shape="circle" coords="292,44,10" href="#europe">
+
+        <area shape="circle" coords="469,201,10" href="#australia">
+
+        <area shape="circle" coords="374,65,10" href="#asia">
+
+        <area shape="circle" coords="340,267,10" href="#antartica">
+
+    </map>
+
+    <figure style="text-align:center;">
+
+        <img usemap="#continents_map" src=https://bit.ly/2bgFrvL width="600px" />
+
+        <figcaption>World Map</figcaption>
+
+    </figure>
+
+    <div>
+
+        <h3 id="africa">Africa</h3>
+
+        <p>Our locations in Africa - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi architecto commodi,
+            eius voluptas, amet voluptate exercitationem possimus perferendis perspiciatis placeat qui? Placeat fugiat
+            error ipsam illo. Ducimus iusto repellendus aliquid.</p>
+
+    </div>
+
+    <div>
+
+        <h3 id="asia">Asia</h3>
+
+        <p>Our locations in Asia - Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel soluta quaerat ipsam
+            necessitatibus eum veritatis, exercitationem quibusdam eos hic aliquam et nihil? Consequuntur labore
+            obcaecati facilis quam quae vero.</p>
+
+    </div>
+
+    <div>
+
+        <h3 id="europe">Europe</h3>
+
+        <p> <span> Our locations in Europe</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel soluta quaerat
+            ipsam
+            necessitatibus eum veritatis, exercitationem quibusdam eos hic aliquam et nihil? Consequuntur labore
+            obcaecati facilis quam quae vero.</p>
+
+    </div>
+
+    <div>
+
+        <h3 id="south_america">South America</h3>
+
+        <p>Our locations in South America - Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel soluta
+            quaerat ipsam
+            necessitatibus eum veritatis, exercitationem quibusdam eos hic aliquam et nihil? Consequuntur labore
+            obcaecati facilis quam quae vero.</p>
+
+    </div>
+
+    <div>
+
+        <h3 id="north_america">North America</h3>
+
+        <p>Our locations in North America - Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel soluta
+            quaerat ipsam
+            necessitatibus eum veritatis, exercitationem quibusdam eos hic aliquam et nihil? Consequuntur labore
+            obcaecati facilis quam quae vero.</p>
+
+    </div>
+
+    <div>
+
+        <h3 id="antartica">Antarctica</h3>
+
+        <p>Our locations in Antarctica - Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel soluta quaerat
+            ipsam
+            necessitatibus eum veritatis, exercitationem quibusdam eos hic aliquam et nihil? Consequuntur labore
+            obcaecati facilis quam quae vero</p>
+
+    </div>
+
+    <div>
+
+        <h3 id="australia">Australia</h3>
+
+        <p>Our locations in Australia - Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel soluta quaerat
+            ipsam
+            necessitatibus eum veritatis, exercitationem quibusdam eos hic aliquam et nihil? Consequuntur labore
+            obcaecati facilis quam quae vero.</p>
+
+    </div>
+    <form>
+        <h2>Choose your favorite code editor</h2>
+    <input type="text" list="text_editors">
+    <datalist id="text_editors">
+        <option value="Atom"></option>
+        <option value="Notepad ++"></option>
+        <option value="Sublime Text"></option>
+        <option value="Wordpad"></option>
+    </datalist>
+    <p><em>For example;
+    </em> Sublime Text</p>
+    </form>
+</main>
+</main>
 </body>
 
 </html>
