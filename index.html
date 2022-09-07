@@ -22,7 +22,6 @@
         h1 {
             color: whitesmoke;
             background-color: MediumSeaGreen;
-
         }
 
         a {
@@ -48,23 +47,9 @@
         }
 
 
-        a:hover,
-        a:active {
-            background-color: red;
-        }
-
-
         span {
             background-color: crimson;
-
-
-
-
-            p {
-                color: rgb(226, 61, 6);
-                padding: auto;
-                background-color: rgb(225, 231, 133);
-            }
+        }
     </style> <!-- End of styles element -->
     <script> // Script element contains Java Script code which add some interacctivity to html page
         window.onload = alert("hello world");
@@ -83,25 +68,31 @@
             <li><a href="https://www.bing.com/">Search with BING</a></li>
             <li><a href="https://www.w3schools.com/html/html_elements.asp">Learn HTML tags with W3 school</a> </li>
         </ul>
+        <h1>My First JavaScript</h1>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button>
+
+        <p id="demo"></p>
         <hr>
     </footer>
     <main>
 
-        <form id="Favorite editor">
+        <form id="Favorite_editor">
             <h2 style="color:rgb(17, 0, 255);">Choose your favorite code editor</h2>
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname"><br>
-            <label for="Editor selector">Code editor</label><br>
-            <input type="text" id="Editor selector" list="text_editors">
+            <label for="Editor_selector">Code editor</label><br>
+            <input type="text" id="Editor_selector" list="text_editors">
             <datalist id="text_editors">
                 <option value="Atom"></option>
                 <option value="Notepad ++"></option>
                 <option value="Sublime Text"></option>
                 <option value="Wordpad"></option>
             </datalist>
-            <input for="Favorite editor" type="submit" value="Send">
+            <input type="submit" value="Send">
             <p><em>For example;
                 </em> Sublime Text</p>
         </form>
